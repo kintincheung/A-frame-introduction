@@ -1,12 +1,12 @@
 
-var rotationSpeed = 1.001;
+var rotationSpeed = 0.001;
 var myOtherBox = document.getElementById('myOtherBox');
 
 function spin(){
 	myOtherBox.object3D.rotation.x += rotationSpeed;
 	myOtherBox.object3D.rotation.y += rotationSpeed;
 	myOtherBox.object3D.rotation.z += rotationSpeed/2;
-	console.log(myOtherBox.object3D.rotation);
+	//console.log(myOtherBox.object3D.rotation);
 }
 setInterval(spin, 10);
 
@@ -17,7 +17,7 @@ myOtherBox.addEventListener('mouseenter', function(){
 });
 
 myOtherBox.addEventListener('mouseleave', function(){
-	rotationSpeed = 1.001;
+	rotationSpeed = 0.001;
 	console.log('left');
 });
 
@@ -38,6 +38,6 @@ myOtherBox.addEventListener('mouseleave', function(){
  }
 
  myOtherBox.addEventListener('click', function(){ // uses a fuse
- 	grow();
-// 	console.log('grew');
-// });
+grow();
+console.log('grew');
+});
