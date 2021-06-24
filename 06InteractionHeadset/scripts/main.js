@@ -21,8 +21,6 @@ myOtherBox.addEventListener('mouseleave', function(){
 	console.log('left');
 });
 
-
-
  var growspeed = 1.3;
 
  function grow(){
