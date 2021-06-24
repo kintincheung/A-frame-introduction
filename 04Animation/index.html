@@ -22,14 +22,17 @@
         depth="1"
         material="src: #wood"
         shadow
-        animation="property: rotation;
+        startEvents: mouseenter
+        animation__mouseenter="property: rotation;
                    to: 90 360 s2;
                    dur: 1000;
                    easing: linear;
+                   startEvents: mouseenter;
                    loop: true"
-        animation__2="property: rotation;
+        animation__mouseleave="property: rotation;
                       to: 90 360 s2;
                       dur: 5000;
+                      startEvents: mouseleave;
                       easing: linear;
                       loop: true" >
       </a-box>
